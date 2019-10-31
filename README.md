@@ -5,6 +5,5 @@ Programa feito para o trabalho final da disciplina de Libras da UNIFEI, no ano d
 Feito por: Bruno Medri, Daniel Henrique, Caio Mello, Thiago Roberto, Ulisses Mira, Vitor Recoaro e Yerro Candido.
 Data: 30/10/2019.
 Objetivo: Programa que trará sinais em libras que o usuário deverá responder qual o significado do sinal mostrado.
-Edição: V1_Linux.
 
 O uso do programa é interativo, ele te mostrará um sinal em libras e o usuário deverá escrever o significado do sinal.
