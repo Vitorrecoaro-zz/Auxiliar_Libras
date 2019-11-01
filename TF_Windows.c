@@ -86,7 +86,7 @@ int main(){
             }            
         }
         else if(op == 3){
-            printf("O teste diario funciona da seguinte maneira, para completa-lo sera necessario 10 acertos, boa sorte!\n\n");
+            printf("O teste diario funciona da seguinte maneira, para completa-lo sera necessario 15 acertos, boa sorte!\n\n");
             printf("Aperte \"y\" para continuar\n");
             scanf(" %c",&ok);
             while(ok!='y'){
@@ -249,7 +249,7 @@ void revisaodiaria(){
             int sinais=(qtdSinais(1));
             sinais++;
             n = (rand() % sinais);
-            while((n%2)!=0 || n==0|| n==antsin){
+            while((n%2)!=0 || n==0 || n==antsin){
                 n = (rand()%sinais);
             }
             antsin = n;
@@ -266,6 +266,17 @@ void revisaodiaria(){
             antsin = n;
             canetaAzul = canetaAzul + revisaoSinal(n,2);
         }
+    }
+    while(canetaAzul>=11 && canetaAzul<16){
+        srand(time(NULL));
+        int sinais=(qtdSinais(2));
+        sinais++;
+        n = (rand() % sinais);
+        while((n%2)!=0 || n==0 || n==antsin){
+            n = (rand()%sinais);
+        }
+        antsin = n;
+        canetaAzul = canetaAzul + revisaoSinal(n,2);    
     }
     printf("Parabens voce concluiu o teste diario ! ;D\n");
     printf("Aperte \"y\" para continuar\n");
