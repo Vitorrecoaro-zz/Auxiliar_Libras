@@ -195,6 +195,7 @@ int revisaoSinal(int n,int rev){
     }    
     if(erros==10){
         printf("Precisa treinar mais!\n");
+        erros = 0;
         return 0;
     }
     else{
