@@ -45,8 +45,8 @@ int main(){
             while((n%2)!=0 || n==0 || n==antsin){
                 n = (rand()%sinais);
             }
-            nada=revisaoSinal(n,1);
             antsin = n;
+            nada=revisaoSinal(n,1);
             printf("Mais um sinal [s/n]? ");
             scanf(" %c",&continuar);
             while(continuar!='s' && continuar != 'n'){
@@ -69,8 +69,8 @@ int main(){
             while((n%2)!=0 || n==0 || n==antsin){
                 n = (rand()%sinais);
             }
-            nada=revisaoSinal(n,2);
             antsin = n;
+            nada=revisaoSinal(n,2);
             printf("Mais um sinal [s/n]? ");
             scanf(" %c",&continuar);
             while(continuar!='s' && continuar != 'n'){
@@ -195,6 +195,7 @@ int revisaoSinal(int n,int rev){
     }    
     if(erros==10){
         printf("Precisa treinar mais!\n");
+        erros = 0;
         return 0;
     }
     else{
