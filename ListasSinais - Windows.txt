@@ -4,13 +4,13 @@ Casa
 2
 Amor
 3
-Cora‡Æo
+Coraâ€¡Ã†o
 4
 Janeiro
 5
 Fevereiro
 6
-Mar‡o
+Marâ€¡o
 7
 Abril
 8
@@ -30,7 +30,7 @@ Novembro
 15
 Dezembro
 16
-µrvore
+Âµrvore
 17
 Borboleta
 18
@@ -104,13 +104,13 @@ IOS
 52
 Rede Social
 53
-ConexÆo
+ConexÃ†o
 54
 Handtalk
 55
 Oi
 56
-Ol 
+OlÂ 
 57
 Conhecer
 58
@@ -132,13 +132,13 @@ Felicidade
 66
 Desculpa
 67
-Com licen‡a
+Com licenâ€¡a
 68
 Obrigado
 69
 Felicidade
 70
-Parab‚ns
+Parabâ€šns
 71
 Tchau
 72
@@ -152,19 +152,19 @@ Ok
 76
 Comer
 77
-Come‡ar
+Comeâ€¡ar
 78
-Fam¡lia
+FamÂ¡lia
 79
-MÆe
+MÃ†e
 80
 Pai
 81
-Ben‡Æo
+Benâ€¡Ã†o
 82
 Filhos
 83
-IrmÆos
+IrmÃ†os
 84
 Primos
 85
@@ -172,9 +172,9 @@ Tios
 86
 Sobrinhos
 87
-Av¢s
+AvÂ¢s
 88
-Bisav¢s
+BisavÂ¢s
 89
 Netos
 90
@@ -194,9 +194,9 @@ Esposa
 97
 Esportes
 98
-Nata‡Æo
+Nataâ€¡Ã†o
 99
-Jud“
+Judâ€œ
 100
 Futebol
 101
@@ -212,23 +212,23 @@ Ciclismo
 106
 Futsal
 107
-Gin stica
+GinÂ stica
 108
 Golfe
 109
 Hipismo
 110
-H¢quei
+HÂ¢quei
 111
-Polo aqu tico
+Polo aquÂ tico
 112
 Remo
 113
 Surfe
 114
-Tˆnis
+TË†nis
 115
-V“lei
+Vâ€œlei
 116
 Animais
 117
@@ -258,17 +258,17 @@ Galinha
 129
 Girafa
 130
-Jacar‚
+Jacarâ€š
 131
-LeÆo
+LeÃ†o
 132
 Macaco
 133
-On‡a
+Onâ€¡a
 134
 Peixe
 135
-TubarÆo
+TubarÃ†o
 136
 Porco
 137
@@ -318,7 +318,7 @@ Confundir
 159
 Comprar
 160
-Dan‡ar
+Danâ€¡ar
 161
 Discutir
 162
