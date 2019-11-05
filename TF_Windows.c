@@ -31,7 +31,7 @@ int main(){
     int op,test=0,nada;
     char continuar,ok = 's';
     FILE *arq;
-    arq = fopen("ListasSinais.txt","a+");
+    arq = fopen("ListasSinais - Windows.txt","a+");
     
     printf("-x-x-x- Menu -x-x-x-\n\n1- Revisao basica.\n2- Revisao avancada.\n3- Teste diario\n0- Sair\n\nOpcao: ");
     scanf(" %d",&op);
@@ -147,7 +147,7 @@ int revisaoSinal(int n,int rev){
     char resp[100],frase[100],teste,link[10000],lose;
     FILE *arq;
     if(rev == 1){
-        arq = fopen("ListasSinais.txt","r");
+        arq = fopen("ListasSinais - Windows.txt","r");
     }
     else if(rev == 2){
         arq = fopen("ListasSinais2.txt","r");
@@ -208,7 +208,7 @@ void addFILE(no *n1,int rev){
     setlocale(LC_ALL,"");
     FILE *arq;
     if(rev == 1){
-        arq = fopen("ListasSinais.txt","a");
+        arq = fopen("ListasSinais - Windows.txt","a");
     }
     else if (rev == 2){
         arq = fopen("ListasSinais2.txt","a");
@@ -224,7 +224,7 @@ int qtdSinais(int rev){
     char test;
     FILE *arq;
     if(rev == 1){
-        arq = fopen("ListasSinais.txt","r");
+        arq = fopen("ListasSinais - Windows.txt","r");
     }
     else if(rev == 2){
         arq = fopen("ListasSinais2.txt","r");
