@@ -192,7 +192,10 @@ int revisaoSinal(int n,int rev){
     fclose(arq);
     for(p=0;p<100;p++){
         frase[p]='\0';
-    }    
+    }  
+    for(p=0;p<10000;p++){
+        link[p]='\0';
+    }  
     if(erros==10){
         printf("Precisa treinar mais!\n");
         erros = 0;
