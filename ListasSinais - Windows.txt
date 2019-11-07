@@ -452,3 +452,15 @@ Garrafa
 226
 Banheiro
 227
+Claro
+228
+Escuro
+229
+Fome
+230
+Meio
+231
+Metade
+232
+Cheio
+233
