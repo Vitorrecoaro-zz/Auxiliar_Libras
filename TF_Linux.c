@@ -4,7 +4,7 @@ Programa feito para o trabalho final da disciplina de Libras da UNIFEI, no ano d
 Feito por: Bruno Medri, Daniel Henrique, Caio Mello, Thiago Roberto, Ulisses Mira, Vitor Recoaro e Yerro Candido
 Data: 30/10/2019
 Objetivo: Programa que trará sinais em libras que o usuário deverá responder qual o significado do sinal mostrado.
-Edição: V1.2_Linux.
+Edição: V1.2_Windows.
 Adições: Modos de revisões e níveis de frases em libras.
 
 */
@@ -150,7 +150,7 @@ int revisaoSinal(int n,int rev){
         arq = fopen("ListasSinais - Linux.txt","r");
     }
     else if(rev == 2){
-        arq = fopen("ListasSinais2.txt","r");
+        arq = fopen("ListasSinais2 - Linux.txt","r");
     }
     for(p=0;p<100;p++){
         frase[p]='\0';
@@ -192,10 +192,7 @@ int revisaoSinal(int n,int rev){
     fclose(arq);
     for(p=0;p<100;p++){
         frase[p]='\0';
-    }  
-    for(p=0;p<10000;p++){
-        link[p]='\0';
-    }  
+    }    
     if(erros==10){
         printf("Precisa treinar mais!\n");
         erros = 0;
@@ -214,7 +211,7 @@ void addFILE(no *n1,int rev){
         arq = fopen("ListasSinais - Linux.txt","a");
     }
     else if (rev == 2){
-        arq = fopen("ListasSinais2.txt","a");
+        arq = fopen("ListasSinais2 - Linux.txt","a");
     }
     fprintf(arq,"%s\n%s\n",n1->nome,n1->link);
     fclose(arq);
@@ -230,7 +227,7 @@ int qtdSinais(int rev){
         arq = fopen("ListasSinais - Linux.txt","r");
     }
     else if(rev == 2){
-        arq = fopen("ListasSinais2.txt","r");
+        arq = fopen("ListasSinais2 - Linux.txt","r");
     }
     test = getc(arq);
     while(test!=EOF){
@@ -248,6 +245,7 @@ void revisaodiaria(){
     char ok = 's';
     int canetaAzul = 1,n,antsin=0;
     while(canetaAzul<11){
+        system("clear");
         if(canetaAzul%3 != 0){
             srand(time(NULL));
             int sinais=(qtdSinais(1));
@@ -258,6 +256,11 @@ void revisaodiaria(){
             }
             antsin = n;
             canetaAzul = canetaAzul + revisaoSinal(n,1);
+            printf("Aperte \"y\" para continuar\n");
+                scanf(" %c",&ok);
+                while(ok!='y'){
+                    scanf(" %c",&ok);
+                }
         }
         else{
             srand(time(NULL));
@@ -269,9 +272,15 @@ void revisaodiaria(){
             }
             antsin = n;
             canetaAzul = canetaAzul + revisaoSinal(n,2);
+            printf("Aperte \"y\" para continuar\n");
+                scanf(" %c",&ok);
+                while(ok!='y'){
+                    scanf(" %c",&ok);
+                }
         }
     }
     while(canetaAzul>=11 && canetaAzul<16){
+        system("clear");
         srand(time(NULL));
         int sinais=(qtdSinais(2));
         sinais++;
@@ -280,7 +289,12 @@ void revisaodiaria(){
             n = (rand()%sinais);
         }
         antsin = n;
-        canetaAzul = canetaAzul + revisaoSinal(n,2);    
+        canetaAzul = canetaAzul + revisaoSinal(n,2);
+        printf("Aperte \"y\" para continuar\n");
+                scanf(" %c",&ok);
+                while(ok!='y'){
+                    scanf(" %c",&ok);
+                }   
     }
     printf("Parabens voce concluiu o teste diario ! ;D\n");
     printf("Aperte \"y\" para continuar\n");
