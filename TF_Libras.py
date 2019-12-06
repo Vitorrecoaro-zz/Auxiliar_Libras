@@ -142,8 +142,8 @@ while op !=0:
                     antSinal2 = rand
                     parada()
                     limpatela()
-        print("Parabéns, você concluiu o teste diário. :D \n")
-        parada()
+            print("Parabéns, você concluiu o teste diário. :D \n")
+            parada()
     elif op==400:
         senha = input("Digite a senha: ")
         if senha == "3sp4d4":
